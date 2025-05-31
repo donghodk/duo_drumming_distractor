@@ -10,3 +10,10 @@ This patch provides real-time interaction with MIDI input/output and structured 
 The collected MIDI data is structured in the following format:
 
 index, timestamp pitch(label) velocity take# distractor_pitchtype distractor_timetype
+
+- index: Event number in sequence.
+- timestamp: Time of the event (in milliseconds).
+- pitch (label): Used to identify specific drummers or experimental subjects.
+- velocity: Intensity of the MIDI note.
+- take#: Current experimental take or session ID. This value can be manually entered in the patch.
+- distractor_pitch_type & distractor_time_type: Values are arbitrarily numbered for reference and represent one of the experimental variables. This field can be manually set in the patch.
